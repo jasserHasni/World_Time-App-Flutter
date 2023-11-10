@@ -1,0 +1,35 @@
+1) so first of all i created a stateful widget in pages/home.dart that returns
+Home widget with a text widget 'this is home' then i imported that file into main.dart and use
+that Home() widget
+2)the text widget returned by Home() widget isn't visible so i centered it in the start of the home
+app using SafeArea() widget
+3) making  a choose_location class that returns a text widget in the body propriety that contains
+"choose location screen" and same for loading_screen
+4)make pages with routing propriety in main.dart and make buttons to navigate using
+Navigation.PushNamed("context",route) function
+5)while redirecting from home to change_location.dart using pushnamed function we can navigate between
+them both using a back icon that appeared automatically
+6)i learned future.delayed method and how to use it :
+--------------------------------------------
+void getData() async {
+      String test = await Future.delayed(Duration(seconds:3),
+            (){
+      return 'test1';
+    }
+    );
+---------------------------------------
+7) i added http in the depencies and uploaded the package and used jsondecode so i can get data from the api
+8) i used worldwidetime api to get information about time and convert it to a data that i can use
+using jsondecode and datetime type to get the real time for now
+9)so i created in services.dart a WorldTimeApp Class that contains arguments to define any place and any time
+then i created a function SetupWorldTime() that uses the WorldTimeApp class in loading.dart
+10) i created an instance of that class and tried to see it in the app in the body
+11) i used the try method in services.dart to assure that if i get an error getting the variable time i would print that error
+12) so i used the Navigation.PushNamed function in the loading page and take the data with the arguments propriety
+to the home page and get it via map after the build function using the function ModalRoute.of......
+13)i strcutred the home page with some widgets and put on it the data i got from 12)
+14)i added a package named flutter_spinkit.dart to design the loading page
+15) i added a new variable isdaytime into the class defined in services so i can add a picture of night or day in the home page
+16)i used the boxdecolaration widget in home page so i can give the picture of night or day in the background
+17)i colored the backgroundcolor of the Scaffold widget to make it match to the picture
+18)
